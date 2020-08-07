@@ -16,15 +16,15 @@
             @if (Route::has('login'))
                     @auth
 			<li>
-                        	<a href="{{ url('/home') }}">Главная</a>
+                        	<a href="{{ url('/home') }}">Home</a>
 			</li>
                     @else
 			<li>
-                        	<a href="{{ route('login') }}">Авторизация</a>
+                        	<a href="{{ route('login') }}">Login</a>
 			</li>
                         @if (Route::has('register'))
 			<li>
-                            <a href="{{ route('register') }}">Регистрация</a>
+                            <a href="{{ route('register') }}">Registration</a>
 			</li>
                         @endif
                     @endauth
