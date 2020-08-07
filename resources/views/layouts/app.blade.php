@@ -10,6 +10,7 @@
 </head>
 
 <body>
+	@include('layouts.nav')
   <div class="uk-section uk-container">
     @yield('content')
   </div>
